@@ -1,8 +1,8 @@
-.TH man(2)
+.TH man 2 "04 MAY 2015" "0.32" "holberton man page" 
 .SH NAME
-holberton \- become a full-stack software engineer
+holberton \- become a full-stack software engineer.
 .SH SYPNOSIS
-holberton [\fSTUDENTNAME\F]
+holberton [\f\STUDENTNAME\]
 .SH DESCRIPTION
 Holberton School is a project-based alternative to college for the next generation of software engineers.
 .SH OPTIONS
