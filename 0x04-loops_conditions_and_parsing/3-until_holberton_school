@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Bash script that displays Holberton School 10 times
+x=1; until [ $x -gt 10 ]; do echo "Holberton School"; let x=x+1; done
