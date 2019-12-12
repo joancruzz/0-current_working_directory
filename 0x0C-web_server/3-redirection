@@ -3,5 +3,5 @@
 apt-get update
 apt-get -y install nginx
 echo "Holberton School for the win!" > /var/www/html/index.html
-sed -i "/listen 80 default_server/a rewrite ^/redirect_me https://twitter.com/home permanent;" /etc/nginx/sites-available/default
+sed -i "/listen 80 default_server/a rewrite ^/redirect_me https://twitter.com permanent;" /etc/nginx/sites-available/default
 service nginx start
