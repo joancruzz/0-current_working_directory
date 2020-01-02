@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install nginx web server & name header
+sudo apt-get -y sudo update && apt-get install -y nginx
+header="add_header X-Served-By $HOSTNAME;"
+sed -i "20i $header" /etc/nginx/sites-available/default
+service nginx restart
+
