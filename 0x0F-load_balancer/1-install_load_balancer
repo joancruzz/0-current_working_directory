@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this is a comment
+apt-get -y install software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.5
+apt-get -y update
+apt-get -y install haproxy=1.5.\*
+echo "frontend http_front
+   bind *:80
+   mode http
+   default_backend http_back
+backend http_back
+   balance roundrobin
+   server 809-web-01 34.73.191.78:80 check
+   server 809-web-02 35.243.240.10:80 check" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
+
