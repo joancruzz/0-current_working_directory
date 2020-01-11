@@ -38,7 +38,7 @@ frontend http_front
    reqadd X-Forwarded-Proto:\ http
    default_backend http_back
 frontend www-https
-  bind [PUBLIC_IP]:443 ssl crt /etc/haproxy/ssl/wizardry.io.pem
+  bind *:443 ssl crt /etc/haproxy/ssl/www.joancruz.tech.pem
   reqadd X-Forwarded-Proto:\ https
   default_backend http_back
 backend http_back
