@@ -16,7 +16,7 @@ Issue Summary:
 * 10% of users were complaining that they were getting a 404 error when trying to log into their page.
 * The root casue was that GET requests weren't being properly sent.
 
-
+Timeline:
 * The issue was detected at 12pm.
 * The issue was detected when users started contacting cutomer service about loging into their account
 * The engineering team for that department was contacted to view bugs in the system.
